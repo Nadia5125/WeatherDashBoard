@@ -1,9 +1,9 @@
 //document.write("Hello this is testing from java");
 
 
-let appId = '1cb4083818cb04732f232a7a92da55f1';
-let units = 'imperial';       //imperial for fahrenheit temperature
-let searchMethod;
+var appId = '1cb4083818cb04732f232a7a92da55f1';
+var units = 'imperial';       //imperial for fahrenheit temperature
+var searchMethod;
 
 
 function getsearchMethod(searchTerm) {    
@@ -71,18 +71,18 @@ function init(resultFromServer) {
 
     
     
-    let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
-    let temperatureElement = document.getElementById('temperature');
-    let humidityElement = document.getElementById('humidity');
-    let widnSpeedElement = document.getElementById('windSpeed');
-    let cityHeader = document.getElementById('cityHeader');
-    let weatherIcon = document.getElementById('documentIconImg');
+    var weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
+    var temperatureElement = document.getElementById('temperature');
+    var humidityElement = document.getElementById('humidity');
+    var widnSpeedElement = document.getElementById('windSpeed');
+    var cityHeader = document.getElementById('cityHeader');
+    var weatherIcon = document.getElementById('documentIconImg');
 
 
 
     weatherIcon.src = 'http://openweathermap.org/img/w/' +  resultFromServer.weather[0].icon +  '.png';
 
-    let resultDescription = resultFromServer.weather[0].description;    
+    var resultDescription = resultFromServer.weather[0].description;    
     weatherDescriptionHeader.innerText = resultDescription.charAt(0).toUpperCase() + resultDescription.slice(1);
 
 
@@ -99,9 +99,9 @@ function init(resultFromServer) {
 
 
 function setPositionForWeather() {
-    let weatherContainer = document.getElementById('weatherContainer');
-    let weatherContainerHeight = weatherContainer.clientHeight;
-    let weatherContainerWidth = weatherContainer.clientWidth
+    var weatherContainer = document.getElementById('weatherContainer');
+    var weatherContainerHeight = weatherContainer.clientHeight;
+    var weatherContainerWidth = weatherContainer.clientWidth
    
     weatherContainer.style.left = `calc(50% - ${weatherContainerWidth/2}px)`;
     weatherContainerWidth.style.top = `calc(50% - ${weatherContainerHeight/1.3}px)`;
@@ -115,7 +115,7 @@ function setPositionForWeather() {
 
 
 document.getElementById('searchBtn').addEventListener('click',() => {
-    let searchTerm = document.getElementById('searchInput').value;
+    var searchTerm = document.getElementById('searchInput').value;
     if(searchTerm)
     searchWeather(searchTerm);
 });

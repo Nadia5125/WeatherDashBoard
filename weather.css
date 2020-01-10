@@ -48,7 +48,7 @@ h1 {
 .searchContainter {
     width: 50%;
     position: relative;
-    top: 35px;
+    top: 100px;
     right: 224px;
 }
 
@@ -64,6 +64,7 @@ h1 {
     position: relative;
     width: 21.80%;
     right: 410px;
+    top: 70px;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
