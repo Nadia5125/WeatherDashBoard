@@ -1,4 +1,12 @@
 
+* {
+    width: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+
 html {    
     height: 100% auto;
     width: 0 auto 0 auto;
@@ -27,11 +35,6 @@ body {
     
 }
 
-.columns {
-    margin: 20px;
-    inline-size: 20px;
-    background-color: brown;
-}
 
 h1 {
     font-weight: 300;
@@ -41,23 +44,26 @@ h1 {
     background-color: #444;
 }
 
+
 .searchContainter {
     width: 50%;
     position: relative;
     top: 35px;
-    left: 30px;
+    left: 200px;
 }
+
+
 
 #weatherContainer {
     background-color: rgb(0, 0, 0, 0.25);      /*rgb(116, 118, 122);*/  
-    
+        
 }
 
 
 #weatherContainer { 
     position: relative;
     width: 21.80%;
-    left: 30px;
+    left: 10px;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
