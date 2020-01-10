@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Copatible" content="IE=edg">
+        <meta name="viewport" content="width=device-width, intitial-scal=1">
+        <title>Weather</title>
+        <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+        <link rel="stylesheet" href="weather.css">
+    </head>
+    <body>
+        <nav class="masternavbar">           
+            <a class="navbar-name"><h4>Weather Dashboard</h4></a>            
+        </nav>
+        <h1></h1>
+        <div class="searchContainter">
+            <input  class="form-control" class="searchControl"  type="text"  placeholder="City Name or Zipcode" id="searchInput" style="width: 200px;">
+            <button  class="btn btn-primary" class="searchControl" id="searchBtn" style="background-color: rgba(2, 34, 53, 0.938);">Search</button>
+        </div>
+        <br>
+        <div id="weatherContainer">
+            <div id="weatherDescription">
+                <h3 id="cityHeader"></h3>
+                <div id="weatherMain">
+                    <div id="temperature"></div>
+                    <div id="weatherDescriptionHeader"></div>
+                    <div><img id="documentIconImg"></div>
+                </div>
+                <hr>
+                <div id="windSpeed" class="buttonDetails"></div>
+                <div id="humidity" class="buttonDetails"></div>
+            </div>
+        </div>           
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+     <script src="weather.js"></script>    
+       
+    </body>
+</html>
